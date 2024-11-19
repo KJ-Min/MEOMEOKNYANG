@@ -96,10 +96,10 @@ const SignupDetailPage = () => {
         return;
       }
 
-      // console.log('Sending request to backend:', {
-      //   url: `${process.env.REACT_APP_API_URL}/users/register/`,
-      //   data: requestData
-      // });
+      console.log('Sending request to backend:', {
+        url: `${process.env.REACT_APP_API_URL}/users/register/`,
+        data: requestData
+      });
       
       const response = await axios.post(
         `${process.env.REACT_APP_API_URL}/users/register/`,
