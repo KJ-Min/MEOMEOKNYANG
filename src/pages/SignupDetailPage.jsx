@@ -110,7 +110,7 @@ const SignupDetailPage = () => {
         navigate('/login');
       }
     } catch (error) {
-      // console.error('Error response:', error.response);
+      console.error('Error response:', error.response);
       const errorData = error.response?.data?.data;
       
       if (errorData) {
